@@ -49,12 +49,21 @@ const Contact = () => {
       if (response.ok || sendToUser) {
         setStatus({ type: 'success', message: 'Message sent successfully!' });
         setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => {
+              setStatus({ type: '', message: '' });
+        },3000)
       };
        if (!response.ok && !sendToUser) {
+        setFormData({ name: '', email: '', message: '' });
         throw new Error('Failed to send message');
+        
       }
     } catch (error) {
       setStatus({ type: 'error', message: 'Failed to send message. Please try again.' });
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => {
+              setStatus({ type: '', message: '' });
+      },3000)
     }
   };
 
