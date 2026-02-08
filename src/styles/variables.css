@@ -4,7 +4,8 @@
   --primary-dark: #1d4ed8;
   --secondary-color: #7c3aed;
   --text-primary: #1f2937;
-  --text-secondary: #8a8c8f;
+  --text-tertiary:#36363b;
+  --text-secondary: #b5b7b9;
   --bg-primary: #ffffff;
   --bg-secondary: #f9fafb;
   --bg-card: #ffffff;
@@ -32,6 +33,7 @@
   --primary-dark: #2563eb;
   --secondary-color: #8b5cf6;
   --text-primary: #f9fafb;
+  --text-tertiary:#90c2f3;
   --text-secondary: #d1d5db;
   --bg-primary: #0f172a;
   --bg-secondary: #1e293b;

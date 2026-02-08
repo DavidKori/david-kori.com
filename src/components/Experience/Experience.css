@@ -133,3 +133,11 @@
     padding: 1.25rem;
   }
 }
+@media (max-width: 334px) {
+  .timeline-content {
+    padding: 5px;
+  }
+  .timeline-item:hover .timeline-content {
+  transform: translateX(1px);
+}
+}

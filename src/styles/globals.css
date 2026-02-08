@@ -17,7 +17,6 @@ body {
   transition: background-color var(--transition-normal),
               color var(--transition-normal);
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
 .container {
@@ -128,6 +127,7 @@ h2 {
   border-top: 1px solid var(--border-color);
   padding: 3rem 1.5rem;
   text-align: center;
+  width: 100vw;
 }
 
 .footer .container {
@@ -146,4 +146,21 @@ h2 {
   .footer {
     padding: 2rem 1rem;
   }
+}
+@media (max-width: 334px) {
+  footer {
+    width: 100%;
+  }
+}
+@media (max-width: 322px) {
+.footer {
+  padding-left:0px;
+  padding-right: 0px;
+  width: 100vw;
+}
+footer > .container > p {
+  text-align: center;
+  text-wrap: wrap;
+  font-size: .8rem;
+}
 }

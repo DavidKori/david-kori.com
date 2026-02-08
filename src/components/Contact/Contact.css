@@ -140,3 +140,35 @@
     font-size: 1.5rem;
   }
 }
+@media (max-width: 334px) {
+  .contact-icon {
+    height: 30px;
+    width: 30px;
+  }
+  .contact-item > div > h4 {
+    font-size: .8rem;
+    font-weight: bolder;
+  }
+  .contact-item > div > a, .contact-item > div > span {
+    font-size: .75rem;
+    font-weight:lighter ;
+  }
+  section {
+    padding: 5px !important;
+  }
+  .form-group {
+    width: 80vw;
+  }
+  .contact-form-container > h3,.contact-info > h3 {
+    width: 80vw;
+    font-size: 1.2rem;
+  }
+  .container > h2 {
+    width: 80vw;
+    font-size: 1.5rem;
+  }
+  form > button {
+    max-width: 80vw;
+    margin: auto;
+  }
+}

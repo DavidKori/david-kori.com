@@ -6,8 +6,8 @@
   overflow: hidden;
   padding-top: 4rem;
   isolation: isolate;
-  width: 100%;
-  width: 100vw;
+  width: 98.5vw;
+  margin: auto;
 }
 
 /* Loading State */
@@ -221,7 +221,7 @@
 
 .hero-greeting {
   font-size: 1.5rem;
-  color: var(--text-secondary);
+  color: var(--text-tertiary);
   margin-bottom: 0.5rem;
   font-weight: 400;
 }
@@ -703,6 +703,11 @@
     height: 350px;
   }
 }
+@media (max-width: 1000px) {
+  .hero {
+    width: 98vw;
+  }
+}
 
 @media (max-width: 992px) {
   .hero-content {
@@ -765,6 +770,29 @@
     background-attachment: scroll; /* Disable parallax on mobile */
   }
 }
+@media (max-width: 751px) {
+  .hero {
+    width: 97.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    width: 97vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    width: 96.5vw;
+  }
+  .tagline-highlight {
+    padding: 0px;
+  }
+  .hero > .container {
+    padding: 0px !important;
+  }
+}
 
 @media (max-width: 480px) {
   .hero-title {
@@ -785,6 +813,81 @@
     align-items: center;
   }
 }
+@media (max-width: 429px) {
+  .hero {
+    width: 96vw;
+  }
+}
+
+@media (max-width: 374px) {
+  .hero {
+    width: 95.5vw;
+  }
+  .tagline-highlight {
+    font-size: .9rem;
+  }
+  .typing-text {
+    max-width: 90vw;
+    text-align: center;
+    text-wrap: wrap;
+
+  }
+}
+@media (max-width: 334px) {
+  .hero {
+    width: 95vw;
+  }
+  main {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 301px) {
+  .hero {
+    width: 94.5vw;
+  }
+}
+@media (max-width: 272px) {
+  .hero {
+    width: 94vw;
+  }
+}
+@media (max-width: 251px) {
+  .hero {
+    width: 93.5vw;
+  }
+.image-container {
+  width: 60vw;
+  height: 60vw;
+}
+
+}
+@media (max-width: 231px) {
+  .hero {
+    width: 93vw;
+  }
+}
+@media (max-width: 215px) {
+  .hero {
+    width: 92.5vw;
+  }
+  .gradient-text {
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+    text-wrap: wrap;
+  }
+}
+@media (max-width: 190px) {
+  .badge {
+    padding: 10px;
+  }
+}
+@media (max-width: 150px) {
+  .hero {
+    width: 90vw;
+  }
+}
+
 
 
 /* Add these styles to your existing Hero.css */
@@ -793,6 +896,9 @@
 .resume-options {
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+.resume-options > button:focus {
+  outline: none;
 }
 
 .resume-view-link {
@@ -884,4 +990,19 @@
   gap: 1rem;
   flex-wrap: wrap;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 334px) {
+  .hero-actions > button {
+    max-width: 80vw;
+    margin: auto;
+  }
+  .resume-options {
+    max-width: 80vw;
+    margin: 10px auto;
+  }
+  .hero{
+    overflow-x: hidden;
+   
+  }
 }

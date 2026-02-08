@@ -9,6 +9,7 @@ import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
 import SocialLinks from './components/SocialLinks/SocialLinks';
 import './styles/globals.css';
+import './App.css'
 
 const App = () => {
   const [sections, setSections] = useState([]);

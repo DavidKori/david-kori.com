@@ -387,3 +387,20 @@
     font-size: 1.25rem;
   }
 }
+@media (max-width: 334px) {
+  section {
+    padding: 0px;
+  }
+ .contact{
+
+
+ }
+  .container {
+    padding: 5px !important;
+  }
+  .category-section {
+    padding: 5px;
+  }
+  .skills {
+padding: 0px;  }
+}
