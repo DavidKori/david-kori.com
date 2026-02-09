@@ -881,6 +881,9 @@
   .badge {
     padding: 10px;
   }
+  .hero {
+    margin-left:0px;
+  }
 }
 @media (max-width: 150px) {
   .hero {

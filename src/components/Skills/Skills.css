@@ -404,3 +404,89 @@
   .skills {
 padding: 0px;  }
 }
+
+@media (max-width: 316px) {
+.level-text {
+font-size: .6rem;
+}
+.skill-level {
+  flex-wrap: wrap;
+}
+.skill-card {
+  padding: 5px;
+}
+.skill-card:hover {
+  transform: translateY(-1px);
+}
+.category-section:hover {
+  transform: none;
+}
+}
+@media (max-width: 255px) {
+.skill-icon, .category-icon-wrapper {
+  width: 20px;
+  height: 20px;
+}
+}
+@media (max-width: 222px) {
+h3.section-title {
+  font-size: 1.3rem;
+}
+.pill-name {
+  font-size: .9rem;
+}
+.pill-level {
+  font-size: 0.65rem;
+}
+}
+@media (max-width: 206px) {
+
+.stat-card {
+  padding: 0px;
+  width: 80vw;
+}
+p.section-subtitle {
+  font-size: .8rem;
+  text-align: center;
+  text-wrap: wrap;
+  width: 85vw;
+  margin: auto;
+  margin-left: 0px;
+}
+.skills-header > h2 {
+  width: 80vw;
+  font-size: 1.3rem;
+}
+.skill-header {
+  flex-direction: column;
+}
+.skill-level {
+  justify-content: center;
+}
+.skill-meta {
+justify-content: center;
+margin-right: auto;
+margin-left: auto;
+}
+.category-header {
+  flex-direction: column;
+}
+.level-text {
+  display: none;
+}
+.skill-info {
+  margin-left: 15vw;
+}
+.skill-name {
+  font-size: .8rem;
+}
+}
+@media (max-width: 172px) {
+.skill-level {
+  margin-left: 0px;
+}
+.star {
+  width: 8px;
+  height: 8px;
+}
+}

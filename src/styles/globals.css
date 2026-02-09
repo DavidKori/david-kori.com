@@ -127,7 +127,7 @@ h2 {
   border-top: 1px solid var(--border-color);
   padding: 3rem 1.5rem;
   text-align: center;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer .container {
@@ -156,11 +156,108 @@ h2 {
 .footer {
   padding-left:0px;
   padding-right: 0px;
-  width: 100vw;
+  width: 100%;
 }
 footer > .container > p {
   text-align: center;
   text-wrap: wrap;
   font-size: .8rem;
 }
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  section {
+    width: 98vw;
+  }
+}
+
+@media (max-width: 751px) {
+  section {
+    width: 97.5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    width: 97vw;
+  }
+}
+
+@media (max-width: 500px) {
+  section {
+    width: 96.5vw;
+  }
+}
+
+@media (max-width: 429px) {
+  section {
+    width: 96vw;
+  }
+}
+
+@media (max-width: 374px) {
+  section {
+    width: 95.5vw;
+  }
+
+}
+@media (max-width: 334px) {
+  section {
+    width: 95vw;
+  }
+  main {
+    margin-top: 60px;
+  }
+}
+@media (max-width: 301px) {
+  section {
+    width: 94.5vw;
+  }
+}
+@media (max-width: 272px) {
+  section {
+    width: 94vw;
+  }
+}
+@media (max-width: 251px) {
+  section {
+    width: 93.5vw;
+  }
+}
+@media (max-width: 231px) {
+  section {
+    width: 93vw;
+  }
+}
+@media (max-width: 215px) {
+  section {
+    width: 92.5vw;
+  }
+}
+@media (max-width: 190px) {
+  section {
+    margin-left:0px;
+  }
+}
+@media (max-width: 150px) {
+  section {
+    width: 90vw;
+  }
+}
+
+
+
+
+
+@media (max-width: 334px) {
+
+  section  {
+    overflow-x: hidden;
+   
+  }
 }
