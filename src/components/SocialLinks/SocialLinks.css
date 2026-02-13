@@ -85,3 +85,17 @@
     padding: 1rem;
   }
 }
+@media (max-width: 450px) {
+.social-link {
+  padding: 0px;
+  width: 60px;
+  overflow-x: hidden;
+}
+.social-icon {
+  width: 25px;
+  height: 25px;
+}
+.social-platform {
+  font-size: .8rem;
+}
+}

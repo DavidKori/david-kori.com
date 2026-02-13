@@ -149,3 +149,25 @@
     height: 200px;
   }
 }
+@media (max-width: 450px) {
+ .project-content {
+  padding: 0px;
+ }
+ .project-description {
+  font-size: .9rem;
+ }
+ .tech-pill {
+  font-size: .8rem;
+ }
+ .project-content > h3 {
+  font-size: 1.3rem;
+ }
+ .tech-tag {
+  font-size: .7rem !important;
+ }
+}
+@media (max-width: 200px) {
+.project-content {
+  width: 100%;
+}
+}

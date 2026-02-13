@@ -140,4 +140,22 @@
   .timeline-item:hover .timeline-content {
   transform: translateX(1px);
 }
+.timeline-marker {
+  width: 20px;
+  height: 20px;
+}
+.timeline-item {
+  gap: 5px;
+}
+}
+@media (max-width: 450px) {
+.timeline-description {
+  font-size: .8rem;
+}
+.timeline-header > h3 {
+  font-size: 1.2rem;
+}
+.period, .company{
+  font-size: .7rem;
+}
 }

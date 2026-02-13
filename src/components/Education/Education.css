@@ -106,3 +106,34 @@
     justify-content: center;
   }
 }
+@media (max-width: 450px) {
+ .container > h2 {
+  font-size: 1.3rem;
+ }
+ .section-subtitle {
+  font-size: .8rem !important;
+ }
+ .education-icon {
+  width: 25px;
+  height: 25px;
+ }
+ .education-card {
+  padding: 0px;
+ }
+ .education-content > h3 {
+  font-size: 1.1rem;
+
+ }
+ .institution, .period {
+  font-size: .65rem;
+ }
+ .education-description {
+  font-size: .8rem;
+ }
+ .certificate-link{
+  padding: 5px;
+  font-size: .7rem;
+  font-weight: bolder;
+  margin-bottom: 5px;
+ }
+}

@@ -150,14 +150,14 @@
     font-weight: bolder;
   }
   .contact-item > div > a, .contact-item > div > span {
-    font-size: .75rem;
+    font-size: .7rem;
     font-weight:lighter ;
   }
   section {
     padding: 5px !important;
   }
   .form-group {
-    width: 80vw;
+    width: 90vw;
   }
   .contact-form-container > h3,.contact-info > h3 {
     width: 80vw;
@@ -170,5 +170,10 @@
   form > button {
     max-width: 80vw;
     margin: auto;
+  }
+}
+@media (max-width: 230px) {
+  .contact-item {
+    flex-direction: column;
   }
 }
