@@ -387,14 +387,16 @@
     font-size: 1.25rem;
   }
 }
+@media (max-width: 450px) {
+.category-section {
+  padding: 5px !important;
+}
+}
+
 @media (max-width: 334px) {
   section {
     padding: 0px;
   }
- .contact{
-
-
- }
   .container {
     padding: 5px !important;
   }

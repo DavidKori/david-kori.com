@@ -261,3 +261,8 @@ footer > .container > p {
    
   }
 }
+@media (max-width: 450px) {
+.container {
+  padding: 0px;
+}
+}
