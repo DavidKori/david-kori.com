@@ -342,6 +342,7 @@
 .btn-icon {
   margin-left: 0.5rem;
   transition: transform 0.3s;
+  color: var(--text-primary) !important;
 }
 
 .btn:hover .btn-icon {
