@@ -74,12 +74,12 @@
       "image":"https://res.cloudinary.com/dxritu7i3/image/upload/v1753698900/myimg_d4cepx.png",
       "jobTitle":"MERN Full Stack Developer",
       "worksFor":{
-        "@type":"koridevifys",
-        "name":"David Kori"
+         "@type":"Organization",
+         "name":"KoriDevifys"
       },
       "address":{
-        "@type":"P.O BOX 41 KIANYAGA",
-        "addressCountry":"Kenya"
+          "@type":"PostalAddress",
+          "addressCountry":"Kenya"
       },
       "sameAs":[
         "https://github.com/DavidKori",
@@ -98,8 +98,8 @@
       "url":"https://www.korideveloper.work.gd/",
       "potentialAction":{
         "@type":"SearchAction",
-        "target":"https://www.korideveloper.work.gd/?s={Portfolio}",
-        "query-input":"required name=portfolio, developer"
+        "target":"https://www.korideveloper.work.gd/?s={search_term_string}",
+        "query-input":"required name=search_term_string"
       }
     }
     </script>
@@ -110,7 +110,7 @@
     <div id="root"></div>
 
     <!-- Main React App -->
-    <script type="module" src="./src/main.jsx"></script>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
 
