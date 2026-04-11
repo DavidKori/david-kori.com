@@ -16,20 +16,20 @@ const Skills = () => {
 
   const fetchSkills = async () => {
     try {
-      setLoading(true);
+      // setLoading(true);
       const response = await axios.get('/skills');
       
       // Validate response is an array
       if (Array.isArray(response.data)) {
         setSkills(response.data);
       } else {
-        console.warn('Skills API returned non-array data:', response.data);
+        // console.warn('Skills API returned non-array data:', response.data);
         setSkills([]);
       }
       setError(null);
     } catch (error) {
-      console.error('Error fetching skills:', error);
-      setError('Failed to load skills. Please try again later.');
+      // console.error('Error fetching skills:', error);
+      setError('Failed to load Content. Please try again later.');
       setSkills([]);
     } finally {
       setLoading(false);
@@ -153,30 +153,30 @@ const Skills = () => {
   };
 
   // Loading state
-  if (loading) {
-    return (
-      <section id="skills" className="skills">
-        <div className="container">
-          <h2>Technical Skills</h2>
-          <div className="skills-loading">
-            <div className="loading-spinner"></div>
-            <p>Loading skills...</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
+  // if (loading) {
+  //   return (
+  //     <section id="skills" className="skills">
+  //       <div className="container">
+  //         <h2>Technical Skills</h2>
+  //         <div className="skills-loading">
+  //           <div className="loading-spinner"></div>
+  //           <p>Loading skills...</p>
+  //         </div>
+  //       </div>
+  //     </section>
+  //   );
+  // }
 
   // Error state
   if (error) {
     return (
       <section id="skills" className="skills">
         <div className="container">
-          <h2>Technical Skills</h2>
+          <h2>Technical Issue</h2>
           <div className="skills-error">
             <div className="error-icon">⚠️</div>
             <p>{error}</p>
-            <button onClick={fetchSkills} className="btn btn-primary">
+            <button onClick={() => location.reload()} className="btn btn-primary">
               Try Again
             </button>
           </div>
