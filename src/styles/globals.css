@@ -104,6 +104,22 @@ h2 {
 }
 
 /* Responsive */
+
+@media (min-width:1440px ) {
+  .hero{
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    top: 0px;
+    max-width: 1920px;
+  }
+
+  .about {
+    margin-top: 100vh;
+  }
+  
+}
+
 @media (max-width: 768px) {
   h2 {
     font-size: 2rem;

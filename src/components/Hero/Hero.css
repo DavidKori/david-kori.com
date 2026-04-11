@@ -1,13 +1,24 @@
 .hero {
   min-height: 100vh;
+
   display: flex;
+
   align-items: center;
+
   position: relative;
-  overflow: hidden;
+
+  overflow: hidden !important;
+
   padding-top: 4rem;
+
   isolation: isolate;
-  width: 98.5vw;
+
+  width:100%;
+  
   margin: auto;
+ 
+
+  overflow-x: hidden !important;
 }
 
 /* Loading State */
@@ -50,6 +61,7 @@
   transform: scale(1.1);
   filter: blur(15px) brightness(0.7);
   animation: floatBg 20s ease-in-out infinite alternate;
+  width: 100%;
 }
 
 @keyframes floatBg {
