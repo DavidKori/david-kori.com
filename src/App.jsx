@@ -8,6 +8,7 @@ import Experience from './components/Experience/Experience';
 import Education from './components/Education/Education';
 import Contact from './components/Contact/Contact';
 import SocialLinks from './components/SocialLinks/SocialLinks';
+import Alert from './components/Alert/Alert';
 import './styles/globals.css';
 import './App.css'
 
@@ -24,6 +25,7 @@ const App = () => {
       { id: 'experience', label: 'Experience' },
       { id: 'education', label: 'Education' },
       { id: 'contact', label: 'Contact' },
+      { id: 'alert' , label: 'Alert!'},
     ];
     
     setSections(availableSections);
@@ -32,6 +34,7 @@ const App = () => {
   return (
     <div className="app">
       <Navbar sections={sections} />
+      
       <main>
         <Hero />
         <About />
@@ -41,7 +44,9 @@ const App = () => {
         <Education />
         <Contact />
         <SocialLinks />
+        <Alert/>
       </main>
+      
       <footer className="footer">
         <div className="container">
           <p>&copy; {new Date().getFullYear()} David Kori. All rights reserved.</p>

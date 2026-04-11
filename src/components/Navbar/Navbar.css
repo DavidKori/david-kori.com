@@ -104,6 +104,28 @@
   display: none;
 }
 
+.alert-triangle {
+  font-size: 2rem;
+  color: red;
+  animation: blinking 2s infinite;
+}
+
+.alert-triangle:hover {
+  cursor: pointer;
+  animation: none;
+}
+
+@keyframes blinking {
+  0%, 100% {
+    opacity: 1;
+  }
+  25%, 75% {
+    opacity: .6;
+  }
+  50% {
+    opacity: .1;
+  }
+}
 @media (max-width: 768px) {
   .navbar-links {
     position: fixed;

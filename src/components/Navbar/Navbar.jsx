@@ -1,11 +1,15 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FiMoon, FiSun, FiMenu, FiX } from 'react-icons/fi';
 import './Navbar.css';
+import { IoAlert } from "react-icons/io5";
+
+import axios from '../../services/axios';
 
 const Navbar = ({ sections = [] }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState('hero'); // Default to hero
+  const [alert,setAlert] = useState({})
   const observerRef = useRef(null);
 
   useEffect(() => {
@@ -15,6 +19,23 @@ const Navbar = ({ sections = [] }) => {
       document.documentElement.setAttribute('data-theme', 'dark');
     }
   }, []);
+  useEffect(() => {
+    fetchAlert();
+  },[])
+
+  const fetchAlert = async () => {
+    try {
+      const response = await axios.get('/alerts');
+      if (response.status === 200) {
+        setAlert(response.data)
+      }else {
+        setAlert('')
+      }
+    } catch (error) {
+    // console.log('Failed to load Content. Please try again later.');
+      setAlert('');
+    }
+  }
 
   useEffect(() => {
     // Cleanup previous observer
@@ -147,6 +168,12 @@ const Navbar = ({ sections = [] }) => {
             </a>
           ))}
         </div>
+
+        {alert &&
+          <div className='alert-triangle'>
+            <IoAlert className='alertTriangle'/>
+          </div>
+        }
 
         <div className="navbar-actions">
           <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle theme">
