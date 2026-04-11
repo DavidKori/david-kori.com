@@ -41,13 +41,15 @@ const App = () => {
         <Education />
         <Contact />
         <SocialLinks />
-      </main>
-      <footer className="footer">
+
+              <footer className="footer">
         <div className="container">
           <p>&copy; {new Date().getFullYear()} David Kori. All rights reserved.</p>
           <p>Built with React & modern CSS</p>
         </div>
       </footer>
+      </main>
+
     </div>
   );
 };
