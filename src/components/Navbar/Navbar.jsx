@@ -169,7 +169,7 @@ const Navbar = ({ sections = [] }) => {
           ))}
         </div>
 
-        {alert &&
+        {alert.publishAlert &&
           <div className='alert-triangle'>
             <IoAlert className='alertTriangle'/>
           </div>
