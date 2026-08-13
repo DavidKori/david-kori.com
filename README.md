@@ -279,7 +279,7 @@ MIT License - Feel free to use and modify for your own portfolio!
 ---
 
 ## 📞 Support
-For support, email example@email.com or create an issue in the GitHub repository.
+For support, email mutugidavid37@gmail.com or create an issue in the GitHub repository.
 
 **⭐ Star this repo if you found it helpful!**
 
